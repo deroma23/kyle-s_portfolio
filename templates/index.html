@@ -8,30 +8,32 @@
     <link rel="stylesheet" href="{% static "css/resumebtn.css" %}">
     <title>Document</title>
 </head>
-<body style="">
+<body>
     
-    <nav class="nav-bar">
-        <div>
-            <h1> PORTFOLIO</h1>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="" class="buttons active">Home</a>
-                </li>
-                <li>
-                    <a href="" class="buttons" id="contact-btn">Contacts</a>
-                </li>
-                <li>
-                    <a href="" class="buttons">Projects</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Wrap all main content for blurring -->
+    <div id="main-content">
+        <nav class="nav-bar">
+            <div>
+                <h1> PORTFOLIO</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="" class="buttons active">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="buttons" id="contact-btn">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="" class="buttons">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <!-- home section -->
-    <section id="home" class="section">
-        <div class="home-section">
+        <!-- home section -->
+        <section id="home" class="section">
+            <div class="home-section">
                 <div class="info-container">
                     <div class="info about-me">
                         <h2>Hello, I'm Kyle 👋</h2>
@@ -40,7 +42,6 @@
                             I enjoy building clean, efficient, and scalable applications.
                         </p>
                     </div>
-
 
                     <div class="info contacts" style="display: ;">
                         <h2>Contacts</h2>
@@ -51,27 +52,27 @@
                     </div>
                 </div>
                 <div class="profile-img">
-                    {% comment %} <div class="imgcontainer"> {% endcomment %}
-                        <img src="/media/kyle's_pictures/1.jpg" alt="">
-                        <button id="resume-btn">
-                            Check Resume
-                        </button>
-                    {% comment %} </div> {% endcomment %}
-                    {% comment %} <div class="see-resume-btn-container">
-                        
-                    </div> {% endcomment %}
+                    <img src="/media/kyle's_pictures/1.jpg" alt="">
 
+                    <!-- Resume Button -->
+                    <button id="resume-btn">Check Resume</button>
                 </div>
             </div>
-     </section>
-    
+        </section>
 
-    <section id="projects" class="section">
+        <section id="projects" class="section">
 
-    </section>
+        </section>
+    </div> <!-- end #main-content -->
 
-    
+    <!-- Resume Modal (separate from blurred content) -->
+    <div id="resume-modal" class="resume-modal">
+        <div class="resume-content">
+            <span id="close-resume" class="close-btn">&times;</span>
+            <img src="{% static 'resume/resume.jpg' %}" alt="My Resume">
+        </div>
+    </div>
 
-    <script src="scripts.js"></script>
+    <script src="{% static "js/resumebtn.js" %}"></script>
 </body>
 </html>

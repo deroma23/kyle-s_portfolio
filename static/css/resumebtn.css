@@ -2,3 +2,63 @@
     position: absolute;
     top: 120%;
 }
+
+/* Disable background scroll when modal is open */
+body.modal-open {
+    overflow: hidden;      /* prevents scroll */
+    /* height: 100vh;         lock viewport height */
+}
+/* Blur only the main content, not the modal */
+body.modal-open #main-content {
+    /* overflow: hidden; */
+    filter: blur(2px);
+    pointer-events: none; /* disable clicks on background */
+}
+
+/* Modal background */
+.resume-modal {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 40, 49, 0.8);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show modal */
+.resume-modal.show {
+    display: flex;
+}
+
+/* Modal content */
+.resume-content {
+    background: white;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Resume image */
+.resume-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #393E46;
+}
+
