@@ -134,9 +134,7 @@ body {
     min-height: 100vh;
 }
 
-#projects {
-    background-color: blueviolet;
-}
+
 
 
 
@@ -171,5 +169,33 @@ body {
     animation: slide_left 2s ease forwards;
     
 }
+
+
+
+/* projectsection */
+
+#main-content #projects{
+    display: flex;
+    flex-direction: column;
+}
+#main-content #projects .projects-title-container {
+    display: flex;
+    justify-content: center;
+}
+/* title projects */
+#main-content #projects .projects-title-container #projects-title {
+    font-size: 3.5rem;
+}
+
+/* box */
+#main-content #projects .projects-container{
+    display: flex;
+    gap: 10px;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+
+
 
 
