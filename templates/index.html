@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/resumebtn.css" %}">
     <title>Document</title>
 </head>
 <body style="">
@@ -50,7 +51,16 @@
                     </div>
                 </div>
                 <div class="profile-img">
-                    <img src="/media/kyle's_pictures/1.jpg" alt="">
+                    {% comment %} <div class="imgcontainer"> {% endcomment %}
+                        <img src="/media/kyle's_pictures/1.jpg" alt="">
+                        <button id="resume-btn">
+                            Check Resume
+                        </button>
+                    {% comment %} </div> {% endcomment %}
+                    {% comment %} <div class="see-resume-btn-container">
+                        
+                    </div> {% endcomment %}
+
                 </div>
             </div>
      </section>
