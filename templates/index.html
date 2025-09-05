@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main-content">
+    {% comment %} <div class="main-content"> {% endcomment %}
             <nav class="navbar">
                 <h1 id="portfolio">
                     Portfolio
@@ -19,11 +19,33 @@
             </nav>
 
             <section class="section" id="home">
-                <div class="home">
-                    homeasasasasasasasas
+                <div class="about-me-container">
+                    <div class="about-me">
+                        <h2>Hello, I'm <span id="name">Kyle Dominic De Roma</span>👋</h2>
+                        <p>
+                            I'm a passionate web developer specializing in Django and modern web technologies. 
+                            I enjoy building clean, efficient, and scalable applications.
+                        </p>
+                    </div>
+
+                    <div class="contacts-container">
+                        <p>
+                            fb
+                        </p>
+                    </div>
+
+                </div>
+                <div class="image-btn-container">
+                    <div class="image-container">
+                        <img src="/media/kyle's_pictures/nobackground.png" alt="">
+                    </div>
+
+                    <div>
+                        <h1>button</h1>
+                    </div>
                 </div>
             </section>
-    </div>
+    {% comment %} </div> {% endcomment %}
 
 </body>
 </html>
