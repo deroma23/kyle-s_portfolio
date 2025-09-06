@@ -13,8 +13,6 @@
 #home .image-btn-container .image-container {
     width: 350px;
     position: relative;
-    /* transition: all 800ms ease-in-out; */
-    /* display: inline-block */
 }
 
 #home .image-btn-container .image-container::after {
