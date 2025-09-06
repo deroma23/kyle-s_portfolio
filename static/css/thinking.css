@@ -16,9 +16,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   z-index: 2;
   animation: pulse 2s infinite;
+}
+.thought-bubble #click-me {
+    color: #EEEEEE;
+    text-decoration: none;
 }
 
 /* Pulse animation */
@@ -54,11 +57,19 @@
   transform: translateX(-50%);
 }
 
-/* @keyframes hidePhoto {
+/* to hide the image */
+
+.hide-photo {
+    animation: hidePhoto 1s forwards;
+}
+
+@keyframes hidePhoto {
     0% {
-        transform: rotateX(100deg);
+        
     }
     100% {
-        display: none
+        transform: rotateY(100deg);
+        opacity: 0;
+
     }
-} */
+}
