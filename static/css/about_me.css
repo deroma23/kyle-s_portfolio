@@ -1,0 +1,23 @@
+#home .about-me-container{
+    animation: fadeInRight 1s forwards;
+}
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#home .about-me-container .about-me #name {
+    color: #08CB00;
+}
+
+
+#home .about-me-container .about-me h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}

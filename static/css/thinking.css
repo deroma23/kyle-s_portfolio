@@ -1,0 +1,64 @@
+.thought-bubble {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  width: 120px;
+  height: 80px;
+  background: black;
+  color: #EEEEEE;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+  border: 1.5px solid #08CB00;
+  border-radius: 50% / 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  animation: pulse 2s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Thought trail dots */
+.thought-bubble::after,
+.thought-bubble::before {
+  content: '';
+  position: absolute;
+  background: black;
+  border: 1.5px solid #08CB00;
+  border-radius: 50%;
+}
+
+.thought-bubble::before {
+  width: 14px;
+  height: 14px;
+  bottom: -10px;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+.thought-bubble::after {
+  width: 8px;
+  height: 8px;
+  bottom: -25px;
+  left: 110%;
+  transform: translateX(-50%);
+}
+
+/* @keyframes hidePhoto {
+    0% {
+        transform: rotateX(100deg);
+    }
+    100% {
+        display: none
+    }
+} */
