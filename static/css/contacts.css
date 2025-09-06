@@ -1,0 +1,53 @@
+.contacts-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  background-color: transparent; /* Optional background */
+}
+
+.contacts-container ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* animation scroll */
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollLeft 15s linear infinite;
+  animation-delay: 1.5s;
+  left: 100%; /* Start off-screen */
+}
+
+.contacts-container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  min-width: max-content;
+}
+
+.contacts-container ul li i {
+  font-size: 18px;
+  color: #3b5998; /* Facebook color */
+}
+
+.contacts-container ul li p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+@keyframes scrollLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}

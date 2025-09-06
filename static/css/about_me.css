@@ -1,4 +1,7 @@
 #home .about-me-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     animation: fadeInRight 1s forwards;
 }
 @keyframes fadeInRight {
@@ -12,6 +15,10 @@
     }
 }
 
+
+
+
+
 #home .about-me-container .about-me #name {
     color: #08CB00;
 }
@@ -21,3 +28,4 @@
     margin-bottom: 15px;
     font-size: 2rem;
 }
+

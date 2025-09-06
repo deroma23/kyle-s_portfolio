@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="{% static "css/about_me.css" %}">
     <link rel="stylesheet" href="{% static "css/thinking.css" %}">
     <link rel="stylesheet" href="{% static "css/resume.css" %}">
+    <link rel="stylesheet" href="{% static "css/contacts.css" %}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
 
     <title>Document</title>
@@ -25,6 +27,7 @@
             </nav>
 
             <section class="section" id="home">
+
                 <div class="about-me-container">
                     <div class="about-me">
                         <h2>Hello, I'm <span id="name">Kyle Dominic De Roma</span>👋</h2>
@@ -35,12 +38,40 @@
                     </div>
 
                     <div class="contacts-container">
-                        <p>
-                            fb
-                        </p>
-                    </div>
+                        <ul>
+                            <li>
+                                <i class="fab fa-facebook-f" aria-hidden=""></i>
+                                <p>
+                                    Facebook
+                                </p>
+                            </li>
 
+                            <li>
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <p>Instagram</p>
+                            </li>
+
+                            <li>
+                                <i class="fab fa-tiktok" aria-hidden="true"></i>
+                                <p>TikTok</p>
+                            </li>
+
+                            
+                            <li>
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <p>Github</p>
+                            </li>
+
+
+                            <li>
+                                <i class="fab fa-google" aria-hidden="true"></i>
+                                <p>Google</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+
                 <div class="image-btn-container">
                     <div class="image-container">
                         <img src="/media/kyle's_pictures/nobackground.png" alt="">
@@ -53,12 +84,14 @@
                     <div class="resume-container">
                         <span id="hide">X</span>
                         <img src="{% static "resume/resume.jpg" %}" alt="">
-                        
                     </div>
 
 
                 </div>
             </section>
+
+
+            
     {% comment %} </div> {% endcomment %}
     <script src="{% static "js/hidePhoto.js" %}"></script>
 </body>
